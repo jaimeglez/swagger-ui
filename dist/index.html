@@ -81,6 +81,10 @@
 
       window.swaggerUi.load();
 
+      setTimeout(function(){
+        window.swaggerUi.api.setBasePath('/api/v1');
+      }, 500);
+
       function log() {
         if ('console' in window) {
           console.log.apply(console, arguments);
